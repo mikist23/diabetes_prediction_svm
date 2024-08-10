@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+import streamlit as st
 
 # loading saved model
 loaded_model = pickle.load(open("C:/Users/User/Documents/codebasics/diabetes_ml_project/trained_model.sav",'rb'))
@@ -27,3 +28,11 @@ def diabetes_prediction(input_data):
         return 'The person is diabetic'
     else:
         return 'The person is non diabetic'
+
+def main():
+
+    # giving a title
+    st.title("Diabetes Predicction web app")
+
+    # input from the user
+    
