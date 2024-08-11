@@ -50,5 +50,9 @@ def main():
 
     # creating a pattern for prediction
     if st.button('Diabetes Test result'):
-        dagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
-        
+        diagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
+
+    st.success(diagnosis)
+
+if __name__ == '__main__':
+    main()
