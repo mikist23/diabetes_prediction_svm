@@ -43,3 +43,12 @@ def main():
     BMI = st.text_input('BMI value')
     DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
     Age = st.text_input('Age of the person')
+
+
+    # code for prediction
+    diagnosis = ''
+
+    # creating a pattern for prediction
+    if st.button('Diabetes Test result'):
+        dagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
+        
