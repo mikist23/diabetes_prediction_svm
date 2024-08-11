@@ -35,4 +35,11 @@ def main():
     st.title("Diabetes Predicction web app")
 
     # input from the user
-    
+    Pregnancies = st.text_input('Number of pregnancies')
+    Glucose = st.text_input('Glucose level')
+    BloodPressure = st.text_input('Blood Pressure value')
+    SkinThickness= st.text_input('Skin Thickness value')
+    Insulin = st.text_input('Insulin level')
+    BMI = st.text_input('BMI value')
+    DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+    Age = st.text_input('Age of the person')
